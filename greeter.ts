@@ -2,10 +2,15 @@
  * Created by SQ04 on 8/1/2016.
  */
 
-function greeter(person: string){
-    return "Hello, "+ person;
+interface Person {
+    firstName: string;
+    lastName: string;
 }
 
-var user = [0, 1, 2];//"Jane User";
+function greeter(person: Person){
+    return "Hello, "+ person.firstName + " "+person.lastName;
+}
+
+var user = { firstName:"Jane", lastName: "User" };
 
 document.body.innerHTML = greeter(user);

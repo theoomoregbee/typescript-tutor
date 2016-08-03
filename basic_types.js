@@ -22,5 +22,11 @@ var age = 37;
 var sentence = "Hello, my name is " + fullName + ".\n\nI'll be " + (age + 1) + " years old next month.";
 //for Array alternative using generic types
 var list = [1, 2, 3];
+//for tuples
+// Declare a tuple type
+var x;
+// Initialize it
+x = ["hello", 10]; // OK
+console.log(x[0] + "-" + x[1].toString());
 document.body.innerHTML = "" + list;
 //# sourceMappingURL=basic_types.js.map

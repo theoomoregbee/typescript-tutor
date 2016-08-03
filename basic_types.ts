@@ -26,5 +26,12 @@ let templateString: string = `Boolean: ${isDone}
     Binary: ${binary}
     Octal: ${octal}`;
 
+let fullName: string = `Bob Bobbington`;
+let age: number = 37;
 
-document.body.innerHTML = templateString;
+
+//equivalent
+let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
+    "I'll be " + (age + 1) + " years old next month.";
+
+document.body.innerHTML = sentence;

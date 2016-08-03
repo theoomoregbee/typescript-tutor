@@ -17,5 +17,10 @@ var color = "blue";
 color = 'red';
 //template strings can span multiple lines and allow expressions ${expr}
 var templateString = "Boolean: " + isDone + "\n    Decimal: " + decimal + "\n    Hex: " + hex + "\n    Binary: " + binary + "\n    Octal: " + octal;
-document.body.innerHTML = templateString;
+var fullName = "Bob Bobbington";
+var age = 37;
+//equivalent
+var sentence = "Hello, my name is " + fullName + ".\n\n" +
+    "I'll be " + (age + 1) + " years old next month.";
+document.body.innerHTML = sentence;
 //# sourceMappingURL=basic_types.js.map

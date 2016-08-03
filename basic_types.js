@@ -19,8 +19,8 @@ color = 'red';
 var templateString = "Boolean: " + isDone + "\n    Decimal: " + decimal + "\n    Hex: " + hex + "\n    Binary: " + binary + "\n    Octal: " + octal;
 var fullName = "Bob Bobbington";
 var age = 37;
-//equivalent
-var sentence = "Hello, my name is " + fullName + ".\n\n" +
-    "I'll be " + (age + 1) + " years old next month.";
-document.body.innerHTML = sentence;
+var sentence = "Hello, my name is " + fullName + ".\n\nI'll be " + (age + 1) + " years old next month.";
+//for Array
+var list = [1, 2, 3];
+document.body.innerHTML = "" + list;
 //# sourceMappingURL=basic_types.js.map

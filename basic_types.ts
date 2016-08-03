@@ -29,9 +29,11 @@ let templateString: string = `Boolean: ${isDone}
 let fullName: string = `Bob Bobbington`;
 let age: number = 37;
 
+let sentence: string = `Hello, my name is ${ fullName }.
 
-//equivalent
-let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
-    "I'll be " + (age + 1) + " years old next month.";
+I'll be ${ age + 1 } years old next month.`;
 
-document.body.innerHTML = sentence;
+//for Array
+let list: number[] = [1, 2, 3];
+
+document.body.innerHTML = ""+list;

@@ -20,7 +20,7 @@ var templateString = "Boolean: " + isDone + "\n    Decimal: " + decimal + "\n   
 var fullName = "Bob Bobbington";
 var age = 37;
 var sentence = "Hello, my name is " + fullName + ".\n\nI'll be " + (age + 1) + " years old next month.";
-//for Array
+//for Array alternative using generic types
 var list = [1, 2, 3];
 document.body.innerHTML = "" + list;
 //# sourceMappingURL=basic_types.js.map

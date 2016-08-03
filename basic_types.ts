@@ -33,7 +33,7 @@ let sentence: string = `Hello, my name is ${ fullName }.
 
 I'll be ${ age + 1 } years old next month.`;
 
-//for Array
-let list: number[] = [1, 2, 3];
+//for Array alternative using generic types
+let list: Array<number> = [1, 2, 3];
 
 document.body.innerHTML = ""+list;

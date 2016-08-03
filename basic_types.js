@@ -30,9 +30,9 @@ x = ["hello", 10]; // OK
 console.log(x[0] + "-" + x[1].toString());
 var Color;
 (function (Color) {
-    Color[Color["Red"] = 0] = "Red";
-    Color[Color["Green"] = 1] = "Green";
-    Color[Color["Blue"] = 2] = "Blue";
+    Color[Color["Red"] = 1] = "Red";
+    Color[Color["Green"] = 2] = "Green";
+    Color[Color["Blue"] = 3] = "Blue";
 })(Color || (Color = {}));
 ;
 var c = Color.Green;

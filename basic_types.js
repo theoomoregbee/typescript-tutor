@@ -28,5 +28,13 @@ var x;
 // Initialize it
 x = ["hello", 10]; // OK
 console.log(x[0] + "-" + x[1].toString());
-document.body.innerHTML = "" + list;
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+;
+var c = Color.Green;
+document.body.innerHTML = "" + c;
 //# sourceMappingURL=basic_types.js.map

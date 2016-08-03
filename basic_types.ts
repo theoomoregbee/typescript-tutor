@@ -44,4 +44,7 @@ x = ["hello", 10]; // OK
 
 console.log(x[0]+"-"+x[1].toString());
 
-document.body.innerHTML = ""+list;
+enum Color {Red, Green, Blue};
+let c: Color = Color.Green;
+
+document.body.innerHTML = ""+c;

@@ -47,4 +47,6 @@ console.log(x[0]+"-"+x[1].toString());
 enum Color {Red = 1, Green, Blue};
 let c: Color = Color.Green;
 
-document.body.innerHTML = ""+c;
+
+//Color[index] return the name of the enum
+document.body.innerHTML = ""+Color[c];

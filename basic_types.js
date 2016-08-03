@@ -36,5 +36,6 @@ var Color;
 })(Color || (Color = {}));
 ;
 var c = Color.Green;
-document.body.innerHTML = "" + c;
+//Color[index] return the name of the enum
+document.body.innerHTML = "" + Color[c];
 //# sourceMappingURL=basic_types.js.map

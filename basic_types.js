@@ -43,4 +43,15 @@ function printLabel(labelledObj) {
 }
 var myObj = { size: 10, label: "Size 10 Object" };
 printLabel(myObj);
+var Greeter = (function () {
+    function Greeter(message) {
+        this.greeting = message;
+    }
+    Greeter.prototype.greet = function () {
+        return "Hello, " + this.greeting;
+    };
+    return Greeter;
+}());
+var greeter = new Greeter("world");
+console.log("Greeter:", greeter.greet());
 //# sourceMappingURL=basic_types.js.map

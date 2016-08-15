@@ -63,3 +63,19 @@ function printLabel(labelledObj: LabelledValue) {
 
 let myObj = {size: 10, label: "Size 10 Object"};
 printLabel(myObj);
+
+class Greeter {
+    greeting: string;
+
+    constructor (message: string) {
+        this.greeting = message;
+    }
+
+    greet() {
+        return "Hello, "+ this.greeting;
+    }
+}
+
+let greeter = new Greeter("world");
+
+console.log("Greeter:", greeter.greet());

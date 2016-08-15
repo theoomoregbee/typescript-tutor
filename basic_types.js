@@ -34,8 +34,13 @@ var Color;
     Color[Color["Green"] = 2] = "Green";
     Color[Color["Blue"] = 3] = "Blue";
 })(Color || (Color = {}));
-;
 var c = Color.Green;
+//for Any variable type in which u dont know thr output
 //Color[index] return the name of the enum
 document.body.innerHTML = "" + Color[c];
+function printLabel(labelledObj) {
+    console.log(labelledObj.label);
+}
+var myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
 //# sourceMappingURL=basic_types.js.map

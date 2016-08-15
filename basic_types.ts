@@ -44,9 +44,22 @@ x = ["hello", 10]; // OK
 
 console.log(x[0]+"-"+x[1].toString());
 
-enum Color {Red = 1, Green, Blue};
+enum Color {Red = 1, Green, Blue}
 let c: Color = Color.Green;
 
+//for Any variable type in which u dont know thr output
 
 //Color[index] return the name of the enum
 document.body.innerHTML = ""+Color[c];
+
+
+interface LabelledValue {
+    label: string;
+}
+
+function printLabel(labelledObj: LabelledValue) {
+    console.log(labelledObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 Object"};
+printLabel(myObj);
